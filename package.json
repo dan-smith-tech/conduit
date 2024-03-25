@@ -19,7 +19,7 @@
 		"sharp": "^0.33.2",
 		"slate": "^0.102.0",
 		"slate-react": "^0.102.0",
-		"typescript": "5.4.2"
+		"typescript": "5.4.3"
 	},
 	"devDependencies": {
 		"@types/node": "^20.11.28"
