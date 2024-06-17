@@ -62,17 +62,6 @@ const Idea = ({
 	 	else Transforms.delete(editor, { at: getPath() });
 	 };
 
-<<<<<<< HEAD
-	 const retryWithNodeContent = () => {
-	 	const input = Node.string(Editor.node(editor, [getParentIndex(), 0])[0]);
-	 	replaceParentNodeTextWithApiResponse(input);
-	 };
-
-	 const retryWithIdeaContent = () => {
-	 	const input = Node.string(Editor.node(editor, getPath())[0]);
-	 	replaceParentNodeTextWithApiResponse(input);
-	 };
-
 	 const prependNode = () => {
 	 	insertNode([getParentIndex()]);
 	 };
@@ -101,36 +90,6 @@ const Idea = ({
 	 	setParentNodeText(content);
 	 };
 
-=======
-	 const prependNode = () => {
-	 	insertNode([getParentIndex()]);
-	 };
-
-	 const appendNode = () => {
-	 	insertNode([getParentIndex() + 1]);
-	 };
-
-	 const replace = () => {
-	 	setParentNodeText(Node.string(node));
-	 };
-
-	 const prependText = () => {
-	 	const parentNodeContent = Node.string(
-	 		Editor.node(editor, [getParentIndex(), 0])[0]
-	 	);
-	 	const content = Node.string(node).concat(" ", parentNodeContent);
-	 	setParentNodeText(content);
-	 };
-
-	 const appendText = () => {
-	 	const parentNodeContent = Node.string(
-	 		Editor.node(editor, [getParentIndex(), 0])[0]
-	 	);
-	 	const content = parentNodeContent.concat(" ", Node.string(node));
-	 	setParentNodeText(content);
-	 };
-
->>>>>>> 5836daa (Fix custom slate element type issue)
    return (
 		<div className={styles.container}>
 			<div className={styles.containerButtons} contentEditable={false}>
